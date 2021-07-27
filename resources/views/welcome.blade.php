@@ -7,11 +7,13 @@
     <title>Laravel</title>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
 </head>
 
-<body class="antialiased bg-gray-400">
+<body class="antialiase">
+    <div id="app">
+    </div>
 
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>
 
 </html>
