@@ -1,15 +1,29 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
+    mode: "jit",
+
+    important: true,
+
     purge: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
-        "./resources/**/*.vue",
+        "./resources/**/*.vue"
     ],
+
     darkMode: false, // or 'media' or 'class'
+
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                rose: colors.rose
+            }
+        }
     },
+
     variants: {
-        extend: {},
+        extend: {}
     },
-    plugins: [],
+
+    plugins: []
 };
