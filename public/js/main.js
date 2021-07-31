@@ -27,6 +27,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
@@ -2271,10 +2276,29 @@ var render = function() {
   return _c(
     "v-app",
     [
-      _c("v-app-bar", {
-        staticClass: "border-b border-gray-200",
-        attrs: { app: "", flat: "" }
-      }),
+      _c(
+        "v-app-bar",
+        {
+          staticClass: "border-b border-gray-200",
+          attrs: { app: "", flat: "" }
+        },
+        [
+          _c(
+            "h3",
+            { staticClass: "text-lg uppercase font-medium tracking-wide" },
+            [
+              _c("span", { staticClass: "text-rose-600 font-semibold" }, [
+                _vm._v("S")
+              ]),
+              _vm._v("tudy\n            "),
+              _c("span", { staticClass: "text-rose- font-semibold" }, [
+                _vm._v("C")
+              ]),
+              _vm._v("enter\n        ")
+            ]
+          )
+        ]
+      ),
       _vm._v(" "),
       _c("the-app-sidebar"),
       _vm._v(" "),
