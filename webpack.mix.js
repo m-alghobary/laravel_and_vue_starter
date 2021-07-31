@@ -1,4 +1,5 @@
 const mix = require("laravel-mix");
+require("vuetifyjs-mix-extension");
 
 /*
  |--------------------------------------------------------------------------
@@ -12,6 +13,7 @@ const mix = require("laravel-mix");
  */
 
 mix.js("resources/js/main.js", "public/js")
+    .vuetify("vuetify-loader", "resources/js/sass/variables.scss")
     .vue()
     .postCss("resources/css/app.css", "public/css", [require("tailwindcss")])
     .browserSync("http://127.0.0.1:8000");
